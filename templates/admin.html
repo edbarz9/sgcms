@@ -1,0 +1,16 @@
+{{define "admin"}}
+{{template "adminheader" .}}
+<div class="main">
+
+<table>
+{{ range $article := .Articles }}
+<tr>
+  <td>{{ $article.Title }}</td>
+  <td>{{ $article.Date }}</td>
+</tr>
+{{ end }}
+</table>
+
+</div>
+{{template "footer" .}}
+{{end}}

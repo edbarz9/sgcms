@@ -1,0 +1,366 @@
+@font-face{font-family: Archive;
+           src: url(/static/font/archive.otf);}
+
+@font-face{
+  font-family: Vollkorn;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/static/font/Vollkorn/Vollkorn-Regular.woff);}
+
+@font-face{
+  font-family: Vollkorn;
+  font-style: italic;
+  font-weight: 400;
+  src: url(/static/font/Vollkorn/Vollkorn-Italic.woff);}
+
+@font-face{
+  font-family: Vollkorn;
+  font-style: normal;
+  font-weight: 600;
+  src: url(/static/font/Vollkorn/Vollkorn-Bold.woff);}
+
+@font-face{
+  font-family: Vollkorn;
+  font-style: italic;
+  font-weight: 600;
+  src: url(/static/font/Vollkorn/Vollkorn-BoldItalic.woff);}
+
+@font-face{
+  font-family: Overpass-Mono;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/static/font/overpass-mono/overpass-mono-regular.otf);}
+
+@font-face{
+  font-family: Overpass;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/static/font/overpass/overpass-regular.otf);}
+
+@font-face{
+  font-family: Overpass;
+  font-style: italic;
+  font-weight: 400;
+  src: url(/static/font/overpass/overpass-italic.otf);}
+
+@font-face{
+  font-family: Overpass;
+  font-style: normal;
+  font-weight: 600;
+  src: url(/static/font/overpass/overpass-heavy.otf);}
+
+@font-face{
+  font-family: Overpass;
+  font-style: italic;
+  font-weight: 600;
+  src: url(/static/font/overpass/overpass-heavy-italic.otf);}
+
+.fvrn{font-family: Vollkorn;
+      font-style: normal;
+      font-weight: 400;}
+
+.fvri{font-family: Vollkorn;
+      font-style: italic;
+      font-weight: 400;}
+
+.fvbn{font-family: Vollkorn;
+      font-style: normal;
+      font-weight: 600;}
+
+.fvbi{font-family: Vollkorn;
+      font-style: italic;
+      font-weight: 600;}
+
+.forn{font-family: Overpass;
+      font-style: normal;
+      font-weight: 400;}
+
+.fori{font-family: Overpass;
+      font-style: italic;
+      font-weight: 400;}
+
+.fobn{font-family: Overpass;
+      font-style: normal;
+      font-weight: 600;}
+
+.fobi{font-family: Overpass;
+      font-style: italic;
+      font-weight: 600;}
+
+html{
+  color: #2c2f33;
+  background-color: #c2c7cc;
+  font-family: Vollkorn;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin-top:0;
+  margin-bottom:0;
+}
+
+footer{
+  margin-top: auto;
+  margin-left: -8px;
+  margin-right: -8px;
+  background: #494b4d;
+  color: #c2c7cc;
+  text-align: center;
+}
+
+.menu{
+  margin-left: -8px;
+  margin-right: -8px;
+  background: #494b4d;
+  color: #c2c7cc;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 0px;
+  font-family: Overpass-Mono
+}
+
+.menu a{
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 1.2em;
+  color: #c2c7cc;
+  text-decoration: none;
+}
+
+.menu a:hover{
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #dae0e6;
+  text-decoration: underline;
+}
+
+a{
+  /*color: #6f88cd;*/
+  color: #4d6198;
+  text-decoration: underline;
+}
+
+a:hover{
+  color: #6f88cd;
+  /*color: #4d6198;*/
+  text-decoration: none;
+}
+
+h2{
+  font-size: 2em;
+  font-family: Archive;
+  text-align: center;
+}
+
+p{
+  font-family: Vollkorn;
+}
+
+i{
+  font-style: italic;
+}
+
+em{
+  color: #161719;
+  font-style: italic;
+  font-weight: 600;
+}
+
+b{
+  font-style: normal;
+  font-weight: 600;
+}
+
+table{
+  margin: auto;
+}
+
+.main{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+article{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main h4{
+  font-family: Archive;
+  text-align: center;
+  font-size: 2em;
+}
+
+.main img{
+  width: 100%;
+}
+
+.tdcheck{
+  text-align: center;
+}
+
+input[type=submit]{
+  font-size: 1em;
+  font-family: Overpass;
+  font-weight: 400;
+  color: #18191a;
+  background: #aaaeb3;
+  box-shadow: 0px 1px 1px #18191a;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 0;
+  cursor:pointer;
+  border-radius: 0px;
+}
+
+input[type=submit]:hover { 
+  background: #dae0e6; 
+  box-shadow: 0px 2px 2px #18191a;
+}
+
+input[type="checkbox"]{display:none;}
+input[type="checkbox"] + label::before{
+  cursor:pointer;
+  content:"";
+  width: 14px;
+  height: 14px;
+  padding-right: 3px;
+  display: inline-block;
+  background: url(/static/svg/check-no.svg)no-repeat;
+}
+input[type="checkbox"]:checked + label::before{
+  content:"";  
+  display: inline-block;
+  background: url(/static/svg/check-yes.svg)no-repeat;  
+}
+
+input[type="radio"]{display:none;}
+input[type="radio"] + label::before{
+  cursor:pointer;
+  content:"";
+  width: 14px;
+  height: 14px;
+  padding-right: 3px;
+  display: inline-block;
+  background: url(/static/svg/radio-false.svg)no-repeat;
+}
+input[type="radio"]:checked + label::before{
+  content:"";  
+  display: inline-block;
+  background: url(/static/svg/radio-true.svg)no-repeat;  
+}
+.hradiol td{
+  text-align: center;
+  padding-left:10px;
+  padding-right:10px;
+}
+
+input[type=text]{
+  font-size: 1em;
+  font-family: Overpass;
+  font-weight: 400;
+  color: #12161a;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding-left: 5px;
+  border: 0px solid #ccc;
+  background-color: #dae0e6;
+  border-radius: 0px;
+  box-shadow: 0px 1px 1px #18191a;
+}
+
+input[type=text][class=artcl-t-edit]{
+  font-size: 2em;
+  font-family: Archive;
+  font-weight: 400;
+  color: #12161a;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  padding-left: 5px;
+  border: 0px solid #ccc;
+  background-color: #dae0e6;
+  border-radius: 0px;
+  box-shadow: 0px 1px 1px #18191a;
+}
+
+input[type=password]{
+  font-size: 1em;
+  font-family: Overpass;
+  font-weight: 400;
+  color: #12161a;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding-left: 5px;
+  background-color: #e6e6e6;
+  border: 0px solid #ccc;
+  border-radius: 0px;
+  box-shadow: 0px 1px 1px #18191a;
+}
+
+.artcl-edit{
+  margin-top: 0px;
+  width: 100%;
+  font-family: Overpass;
+  background: #dae0e6;
+  border: 0px solid #ccc;
+  color: #18191a;
+  box-shadow: 0px 1px 1px #18191a;
+}
+
+.artcl-s-edit{
+  float: right;
+  margin-top: 0px;
+  margin-right: 0px;
+}
+
+.artcl-t-edit{
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+.article-bottom{
+  text-align: right;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #616366;
+}
+
+article h4{
+  margin-top: 5px;
+  margin-bottom: 0px;  
+  font-family: Archive;
+  font-size: 2.5em;
+}
+
+article p{
+  margin-top: 5px;
+  font-family: Vollkorn;
+  font-size: 1.2em;
+  text-align: justify;
+}
+
+article hr{
+  width: 100%;
+  color: #919599;
+}
+
+blockquote{
+  font-style: italic;
+  font-size: 1.4em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  padding-left: 15px;
+  border-left: 5px solid #616366;
+}
+
+.trumbowyg-editor {
+  background: #dae0e6;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+<div class="main">
+<h2>{{ .Title }}</h2>
+<form method="get">
+<table>
+{{range .Contents}}
+<tr>
+<td>{{ .Id }} {{ .Text}} </td>
+<td class="tdcheck"><input type="checkbox" name="delete{{ .Id }}" value="{{ .Id }}" id="check{{ .Id }}"><label for="check{{ .Id }}"></label></td>
+</tr>
+{{end}}
+
+</table>
+
+<input type="text" name="content" placeholder="New content">
+
+<table class="hradiol">
+  <tr>
+    <td>Yes</td>
+    <td>Mu</td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td><input type="radio" name="r1" value="0" id="rd1">
+      <label for="rd1"></label>
+    </td>
+    <td><input type="radio" name="r1" value="0" id="rd2">
+      <label for="rd2"></label>
+    </td>
+    <td><input type="radio" name="r1" value="0" id="rd3">
+      <label for="rd3"></label>
+    </td>
+  </tr>
+</table>
+<input type="submit" value="Submit">
+</form>
+
+<p>This is just a font test <i>just to see</i> if this works.</p>
+<p>Also, <b>THIS</b> should be bold and <em>This</em> should be bold and italic.</p>
+
+<div class="forn">This is a test</div>
+<div class="fori">This is a test</div>
+<div class="fobn">This is a test</div>
+<div class="fobi">This is a test</div>
+
+</div>
+</body>
+</html>

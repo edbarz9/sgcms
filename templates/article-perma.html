@@ -1,0 +1,12 @@
+{{define "article-perma"}}
+{{template "header" .}}
+<div class="main">
+<h4>{{ .Title }}</h4>
+<article>
+  <p>{{ .Content }}</p>
+  <h5 class="article-bottom">{{ .Date }}</h5>
+  <p>Here come the comments (template article-perma.html)</p>
+</article>
+</div>
+{{template "footer" .}}
+{{end}}

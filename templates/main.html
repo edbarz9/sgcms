@@ -1,0 +1,14 @@
+{{define "main"}}
+{{template "header" .}}
+<div class="main">
+{{ range $article := .Articles }}
+  <h4>{{ $article.Title }}</h4>
+<article>
+  <p>{{ $article.Content }}</p>
+  <h5 class="article-bottom">{{ $article.Date }}</h5>
+  <hr>
+</article>
+{{ end }}
+</div>
+{{template "footer" .}}
+{{end}}
