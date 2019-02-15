@@ -1,0 +1,2 @@
+# sgcms
+Simple Golang CMS
